@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/bg">
 
     <Button
         android:id="@+id/btnStart"
@@ -15,7 +16,7 @@
         android:paddingTop="10dp"
         android:paddingRight="20dp"
         android:paddingBottom="10dp"
-        android:text="Start Cast"
+        android:text="@string/start_cast"
         android:textColor="#ffffff"
         android:textSize="20sp" />
 

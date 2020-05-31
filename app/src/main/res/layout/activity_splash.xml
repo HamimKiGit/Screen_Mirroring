@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SplashActivity">
+    tools:context=".SplashActivity"
+    android:background="@drawable/bg">
 
     <TextView
         android:layout_width="wrap_content"
@@ -11,14 +12,24 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:textSize="50sp"
-        android:text="Welcome" />
+        android:text="" />
     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/powered_by"
+        android:layout_above="@+id/tvPower"
+        android:layout_toLeftOf="@id/tvPower"
+        android:textColor="@color/center"
+        android:layout_toStartOf="@id/tvPower" />
+    <TextView
+        android:id="@+id/tvPower"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:textSize="30sp"
-        android:text="HMM LLC"
-        android:layout_margin="16dp"
+        android:text="@string/hmm_llc"
+        android:textColor="@color/center"
+        android:layout_marginBottom="16dp"
         android:textStyle="bold"/>
 </RelativeLayout>
